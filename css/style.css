@@ -1,0 +1,327 @@
+body{
+  background-image: url(../wbg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+
+h1{
+  font-weight: bolder;
+  font-style: italic;
+  position: relative;
+  text-align: center;
+  text-transform: capitalize;
+  background-color: white;
+  margin: 20px;
+
+}
+
+.title{
+  display: inline-block;
+}
+
+.title::after{
+  content: "      rent and buy";
+  background-color: #add8e6;
+  font-family: cursive;
+  font-weight: bold;
+  display: block;
+}
+
+p{
+  font-weight: bold;
+  font-style: oblique;
+
+  text-align: center;
+  text-transform: uppercase;
+  font-family: cursive;
+}
+
+h2{
+  font-weight: bolder;
+  font-style: italic;
+  position: relative;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.card{
+  position: relative;
+  margin: 1em;
+  background: grey;
+  display: inline-block;
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    top: 1.25em;
+    bottom: 1.25em;
+    left: 1.25em;
+    right: 1.25em;
+    opacity: 1;
+    transition: transform ease-out 250ms;
+  }
+
+  &::before {
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    transform: scale(0,1);
+  }
+
+  &::after {
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    transform: scale(1,0);
+  }
+
+  &:hover::before {
+    transform: scale(1.05, 1);
+  }
+
+  &:hover::after {
+    transform: scale(1, 1.05);
+  }
+}
+
+.card-img1{
+  max-width: 100%;
+ display: block;
+ transition: opacity ease-out 250ms;
+ width: 300px;
+ height: 400px;
+}
+
+.card:hover{
+  .card-img1{
+    opacity: .4;
+  }
+}
+
+.card-img2{
+  max-width: 100%;
+ display: block;
+ transition: opacity ease-out 250ms;
+ width: 300px;
+ height: 400px;
+}
+
+.card:hover{
+  .card-img2{
+    opacity: .4;
+  }
+}
+
+.card-img3{
+  max-width: 100%;
+ display: block;
+ transition: opacity ease-out 250ms;
+ width: 300px;
+ height: 400px;
+}
+
+.card:hover{
+  .card-img3{
+    opacity: .4;
+  }
+}
+
+
+.img{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 15rem;
+
+  & > * {
+    display: grid;
+    place-items: center;
+    outline: 3px solid red;
+
+    & > * {
+      padding: .25em .75em;
+      border-radius: .25em;
+      background: rgba(0,0,0,.75);
+      color: #fff;
+      letter-spacing: 1px;
+    }
+  }
+}
+
+.img{
+  padding-left: 50px;
+  padding-right: 30px;
+}
+
+
+.alc{
+  background-image: url(../alc.jpg);
+  width: 300px;
+  height: 300px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top left;
+  padding-bottom: 80px;
+  transition-duration: 900ms;
+  transition-property: transform;
+  transition-timing-function: ease-in-out;
+}
+
+.alc:hover{
+  transform: rotate(3deg);
+}
+
+.hd{
+  background-image: url(../hd.jpg);
+  width: 300px;
+  height: 300px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position:top center;
+  padding-bottom: 80px;
+  transition-duration: 900ms;
+  transition-property: transform;
+  transition-timing-function: ease-in-out;
+}
+
+.hd:hover{
+  transform: rotate(3deg);
+}
+
+.let{
+  background-image: url(../let.jpg);
+  width: 300px;
+  height: 300px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top right;
+  padding-botom: 80px;
+  transition-duration: 900ms;
+  transition-property: transform;
+  transition-timing-function: ease-in-out;
+}
+
+.let:hover{
+  transform: rotate(3deg);
+}
+
+.ma{
+  background-image: url(../ma.jpg);
+  width: 300px;
+  height: 300px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center left;
+  padding-bottom: 80px;
+  transition-duration: 900ms;
+  transition-property: transform;
+  transition-timing-function: ease-in-out;
+}
+
+.ma:hover{
+  transform: rotate(3deg);
+}
+
+.nor{
+  background-image: url(../nor.jpg);
+  width: 300px;
+  height: 300px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding-bottom: 80px;
+  transition-duration: 900ms;
+  transition-property: transform;
+  transition-timing-function: ease-in-out;
+}
+
+.nor:hover{
+  transform: rotate(3deg);
+}
+
+.out{
+  background-image: url(../out.jpg);
+  width: 300px;
+  height: 300px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position:center right;
+  padding-bottom: 80px;
+  transition-duration: 900ms;
+  transition-property: transform;
+  transition-timing-function: ease-in-out;
+}
+
+.out:hover{
+  transform: rotate(3deg);
+}
+
+.rich{
+  background-image: url(../rich.jpg);
+  width: 300px;
+  height: 300px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom left;
+  padding-bottom: 80px;
+  transition-duration: 900ms;
+  transition-property: transform;
+  transition-timing-function: ease-in-out;
+}
+
+.rich:hover{
+  transform: rotate(3deg);
+}
+
+.sap{
+  background-image: url(../sap.jpg);
+  width: 300px;
+  height: 300px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+  padding-bottom: 80px;
+  transition-duration: 900ms;
+  transition-property: transform;
+  transition-timing-function: ease-in-out;
+}
+
+.sap:hover{
+  transform: rotate(3deg);
+}
+
+.sub{
+  background-image: url(../sub.jpg);
+  width: 300px;
+  height: 300px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom right;
+  padding-bottom: 80px;
+  transition-duration: 900ms;
+  transition-property: transform;
+  transition-timing-function: ease-in-out;
+}
+
+.sub:hover{
+  transform: rotate(3deg);
+}
+
+
+h3{
+  font-weight: bolder;
+  font-style: italic;
+  position: relative;
+  text-align: center;
+  text-transform: capitalize;
+  display: inline-block;
+  background-color: white;
+}
+
+.info{
+
+  margin-top: 150px;
+}
